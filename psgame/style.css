@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s;
+}
+input{
+background-color: #111111;
+color:white;
+font-size: 16px;
+padding: 5px;
+font-family: 'Oswald', sans-serif;
+border: #202020;
+}
+
+.search-item{
+    height: 65px;
+}
+.img{
+width: 65%;
+height: auto;
+object-fit: content;
+}
+.news-img{
+    width: 79%;
+}
+.header1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    background: #202020;
+    height: 75px;
+    padding: 0 20px;
+    transition: all .5s;
+}
+
+header > div.logo{
+    font-family: 'Oswald', sans-serif;
+    color: White;
+    line-height: 70px;
+    font-size: 48px;
+    transition: all .8s;
+}
+header > div.logo:hover{
+    transform: rotate(360deg) scale(0.5);
+}
+
+header > nav.navbar, header > div.search-faq{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header > nav.navbar > div.nav-item, header > div.search-faq > div.search-item{
+    display: flex;
+    align-items: center;
+}
+
+header > nav.navbar > div.nav-item > a{
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    padding: 25px 20px;
+    transition: all .5s;
+}
+header > nav.navbar > div.nav-item > a:hover{
+    color:#252525;
+    transform: scale(1.2);
+}
+
+header > div.search-faq > div.search-item{
+    padding-left: 40px;
+} 
+section.banner{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/image1.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+section.banner > div.container{
+    padding: 300px 0 0 70px;
+}
+section.banner > div.container > h1{
+    font-size: 60px;
+}
+section.banner > div.container > p{
+    font-size: 40px;
+}
+
+
+
+
+
+
+section.hot-news{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 300px);
+    padding: 95px 150px 0px;
+    
+}
+.hot-news-text{
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+img{
+    width: 500px;
+}
+
+
+
+
+
+section.news{
+    width: calc(100% - 300px);
+    padding: 50px 150px 0px
+}
+section.news > header{
+    font-size: 64px;
+    text-align: center;
+}
+article.news-item{
+    display: flex;
+    margin-top: 20px;
+}
+article.news-item:nth-child(odd){
+    flex-direction: row-reverse;;
+}
+article.news-item:nth-child(odd) > div.news-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 50px;
+}
+article.news-item:nth-child(even) > div.news-text{
+    margin-right: 50px;
+}
+
+div.news-text > h2{
+    font-family: Oswald;
+font-size: 48px;
+line-height: 71px;
+}
+div.news-text > p{
+    font-family: Oswald;
+font-size: 24px;
+line-height: 36px;
+text-align: justify;
+}
+ .darkTheme .header1{
+     background-color: #151515;
+     color: #C1D1D9;
+ }
+ .darkTheme{
+background-color: #202020;
+color:#C1D1D9 ;
+ }
+ .darkTheme .hot-news-text{
+    color:#C1D1D9 ;
+ }
+ .darkTheme input{
+    color:#C1D1D9 ;
+    background-color: #151515;
+ }
+ .darkTheme .nav-item a{
+    color:#C1D1D9 ; 
+ }
+ .darkTheme .header1{
+    background-color: #151515;
+    color: #C1D1D9;
+}
+.darkTheme .banner{
+    color: #C1D1D9;
+}
+.darkTheme .logo{
+    color: #C1D1D9;
+}
+
+.lightTheme{
+background-color: white;
+color:black;
+}
+.lightTheme .hot-news-text{
+   color:black ;
+}
+.lightTheme input{
+   color:white;
+   background-color: #151515;
+
+}
+.lightTheme .nav-item a{
+   color:white; 
+}
+.lightTheme .banner{
+    color: white;
+}
+.lightTheme .logo{
+    color: white;
+}
+.lightTheme .header1{
+    background-color: #151515;
+    color: #C1D1D9;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #303030;
+    padding: 30px 0 0 0;
+}
+
+.footerLinks{
+    display: flex;
+}
+.footerCol{
+    width:calc( ( 100% - 40px ) / 3 );
+    margin: 30px 20px;
+    margin-bottom: 70px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerCopyright{
+    background-color: 202020;
+}
+
+.copyright{
+    color: rgba(255,255,255,50%);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+.pFooter{
+    color: rgba(255,255,255,50%);
+    font-size: 20px;
+}
+.h3footer{
+    color: rgba(255,255,255,50%);
+    font-size: 20px;
+}
+.forfooter{
+    padding: 0 0 100px 0;
+}
+.news-image1{
+    padding: 0 0 100px 0;
+}
